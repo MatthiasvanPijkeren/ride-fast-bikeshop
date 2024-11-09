@@ -36,6 +36,16 @@ return [
             'searchables' => 'collection:pages',
         ],
 
+        'crew' => [
+            'driver' => 'local',
+            'searchables' => 'collection:crew',
+        ],
+
+        'brands' => [
+            'driver' => 'local',
+            'searchables' => 'collection:brands',
+        ],
+
     ],
 
     /*

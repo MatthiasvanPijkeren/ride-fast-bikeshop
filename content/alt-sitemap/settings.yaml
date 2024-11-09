@@ -1,0 +1,4 @@
+default_collection_priorities: {  }
+exclude_collections_from_sitemap:
+  - crew
+  - brands

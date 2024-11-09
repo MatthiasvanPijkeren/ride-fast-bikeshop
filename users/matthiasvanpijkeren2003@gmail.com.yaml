@@ -2,3 +2,28 @@ name: Matthias
 super: true
 id: 2b0b803f-b82a-4e69-aa62-eb69f50da1ad
 password_hash: $2y$12$r5xfuh9BDjYaMBpS0jXYsONO7TK7ZYgDcMTf8eprWbSO34fMqccNO
+preferences:
+  locale: nl
+  favorites: {  }
+  nav:
+    reorder:
+      - content
+    sections:
+      content:
+        action: '@hide'
+        items:
+          'content::collections': '@hide'
+          'content::navigation': '@hide'
+          'content::taxonomies': '@hide'
+          'content::globals': '@hide'
+      algemeen:
+        action: '@create'
+        display: Algemeen
+        items:
+          'content::collections::paginas': '@move'
+          'content::collections::brands': '@move'
+          'content::collections::crew': '@move'
+          'content::navigation::main': '@move'
+          'content::globals::footer': '@move'
+          'content::assets': '@move'
+      fields: '@hide'

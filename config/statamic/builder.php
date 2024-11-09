@@ -21,6 +21,10 @@ return [
         |
         */
         'collections.pages' => [
+            'home' => App\Blueprints\Pages\HomePageBlueprint::class,
+            'content' => App\Blueprints\Pages\ContentPageBlueprint::class,
+            'archive' => App\Blueprints\Pages\ArchivePageBlueprint::class,
+            'contact' => App\Blueprints\Pages\ContactPageBlueprint::class,
             'page' => App\Blueprints\Pages\PageBlueprint::class,
         ],
         'taxonomies.tags' => [
@@ -62,6 +66,8 @@ return [
     */
     'collections' => [
         App\Collections\Pages::class,
+        App\Collections\Brands::class,
+        App\Collections\Crew::class,
     ],
 
     /*
@@ -87,7 +93,7 @@ return [
     |
     */
     'globals' => [
-        App\Globals\Footer::class,
+        // App\Globals\Footer::class,
     ],
 
     /*

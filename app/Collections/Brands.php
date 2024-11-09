@@ -5,7 +5,7 @@ namespace App\Collections;
 use Statamic\Facades\Site;
 use Tdwesten\StatamicBuilder\BaseCollection;
 
-class Pages extends BaseCollection
+class Brands extends BaseCollection
 {
     /**
      * Return the handle for the collection
@@ -14,7 +14,7 @@ class Pages extends BaseCollection
      */
     public static function handle(): string
     {
-        return 'pages';
+        return 'brands';
     }
 
     /**
@@ -24,7 +24,7 @@ class Pages extends BaseCollection
      */
     public function title(): string
     {
-        return 'Pagina\'s';
+        return 'Brands';
     }
 
     /**
@@ -36,7 +36,7 @@ class Pages extends BaseCollection
      */
     public function blueprint(): string
     {
-        return 'page';
+        return 'brand';
     }
 
     /**
@@ -49,7 +49,7 @@ class Pages extends BaseCollection
      */
     public function route(): null|string|array
     {
-        return '/{parent_uri}/{slug}';
+        return null;
     }
 
     /**
@@ -79,7 +79,7 @@ class Pages extends BaseCollection
      */
     public function mount(): ?string
     {
-        return null;
+        return '6a88cd47-d1c3-4906-b2d9-fee3b064e8f0';
     }
 
     /**
@@ -111,7 +111,7 @@ class Pages extends BaseCollection
      */
     public function template(): ?string
     {
-        return 'home';
+        return null;
     }
 
     /**
@@ -141,7 +141,7 @@ class Pages extends BaseCollection
      */
     public function searchIndex(): string
     {
-        return 'pages';
+        return 'brands';
     }
 
     /**
@@ -187,11 +187,7 @@ class Pages extends BaseCollection
      */
     public function structure(): ?array
     {
-        return [
-            'root' => true,
-            'slugs' => true,
-            'max_depth' => 3,
-        ];
+        return null;
     }
 
     /**
@@ -255,13 +251,7 @@ class Pages extends BaseCollection
      */
     public function previewTargets(): array
     {
-        return [
-            [
-                'label' => 'Entry',
-                'format' => '/{parent_uri}/{slug}',
-                'refresh' => true,
-            ],
-        ];
+        return [];
     }
 
     /**
